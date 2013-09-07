@@ -40,12 +40,12 @@ Package for umbraco **4.x/6.x** that allows store multiples videos URL's with ex
 Umbraco Package Installer
 =======
 
-[Umbraco.VideoPicker]() (Working on umbraco v4.x and v6.x)
+[Umbraco.VideoPicker](https://github.com/CuriosoElBicho/VideoPicker/blob/master/Umbraco.Packages/Umbraco.VideoPicker.v6.x_1.0.zip) (Working on umbraco v4.x and v6.x)
 
 Umbraco Package Example Installer
 =======
 
-[Umbraco.VideoPicker.Example]() (Working on umbraco v6.x)
+[Umbraco.VideoPicker.Example](https://github.com/CuriosoElBicho/VideoPicker/blob/master/Umbraco.Packages/Umbraco.VideoPicker.Example.v6.x_1.0.zip) (Working on umbraco v6.x)
 
 This macro (can be easly refactored to work in umbraco **v4.x**) shows how to query the data stored form the VideoPicker and get it on the front end page, and then using embed.ly (uses [oEmbed](http://oembed.com/) standard) provider get videos from: *youtube*, *vimeo*, or any other supported by embed.ly.
 Also you can build your own provider.
