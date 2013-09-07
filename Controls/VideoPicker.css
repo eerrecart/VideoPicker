@@ -1,0 +1,45 @@
+﻿.valuesCustomControl .value
+{
+    padding-bottom:5px;
+}
+
+.valuesCustomControl .value .del
+{
+    color:Red;
+    cursor:pointer;
+}
+
+.valuesCustomControl .value .handle
+{
+    cursor:move;
+}
+
+.vpHolder
+{
+    
+}
+
+.vpMediaHolder
+{
+    cursor: pointer;
+}
+
+.vpTitle
+{
+    
+}
+
+.vpHash
+{
+    
+}
+
+.vpDesc
+{
+    width: 100%;
+}
+
+.newItem 
+{
+    color: gray;
+}

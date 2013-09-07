@@ -1,0 +1,75 @@
+﻿<table>
+    <tbody>
+        {{#videos}}
+        <tr class="vpHolder" data-index="{{id}}">
+            <td>
+                <input type='hidden' id='{{opts.contentId}}{{id}}' class="vpMediaId" value="{{mediaId}}">
+                <div id='{{opts.previewHolder}}{{id}}' style='margin-top: 5px;'>
+                    <div id='{{opts.imgViewerHolder}}{{id}}' class='imageViewer'>
+                        <img src='/umbraco/images/blank.png' alt='No Image' border='0' class='noimage'>
+                    </div>
+                    <span id='btns_{{id}}' style='display: none;'>
+                        <span id='{{opts.title}}{{id}}' style='font-weight: bold;'></span>&nbsp;&nbsp;
+                        <a href='javascript:void(0);' class="vpRemoveMediaLnk" style='color: red;' title='Delete'>Delete image</a>&nbsp;&nbsp;
+                    </span>
+                </div>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" class="vpTitle" value="{{title}}" /></td>
+                        <td>
+                            <input type="text" class="vpHash" value="{{hash}}" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea class="vpDesc" class="vpDesc">{{desc}}</textarea></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table> 
+                    <tr>
+                        <td><a class="vpAddMediaLnk" href="javascript:void(0);">Cambiar Media</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="vpRemoveLnk" href="javascript:void(0);" onclick="javascript:RemoveVideo($(this).parents('.vpHolder'));">Remover</a></td>
+                        
+                    </tr>
+                </table>
+            </td>
+
+        </tr>
+        {{/videos}}
+        <tr class="vpHolder newItem">
+            <td>
+                <img src="http://placehold.it/100x100&t=Thmb+Image" />
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" class="vpTitle newItem" placeholder="Título del video" /></td>
+                        <td>
+                            <input type="text" class="vpHash newItem" placeholder="Identificador del video" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea class="vpDesc newItem" class="vpDesc" placeholder="Descripción del video"></textarea></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td><a class="vpAddItem" href="javascript:void(0);" onclick="javascript:AddVideo();">Agregar Video</a></td>
+                    </tr>
+                    
+                </table>
+            </td>
+
+        </tr>
+    </tbody>
+
+</table>
