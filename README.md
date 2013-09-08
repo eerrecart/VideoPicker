@@ -42,6 +42,15 @@ Umbraco Package Installer
 
 [Umbraco.VideoPicker](https://github.com/CuriosoElBicho/VideoPicker/blob/master/Umbraco.Packages/Umbraco.VideoPicker.v6.x_1.0.zip?raw=true) (Working on umbraco v4.x and v6.x)
 
+Install and Setup
+=======
+
+1. Install the package.
+2. Create a new Data Type (Developer -> Data Types), select "umbraco usercontrol wrapper" as property editor; save the data type.
+3. On the settings section of the data type created, select the user control: "~/usercontrols/Umbraco.VideoPicker/VideoPickerDatatype.ascx", save the data type.
+4. On the doc type of your preference add a new property using the Type created on the step 3. (If you wish to install the example package, the macro there look for a property called video.)
+5. Checks your documents based on the doc type choosen on step 4, you will see video picker component.
+
 Umbraco Package Example Installer
 =======
 
