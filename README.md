@@ -10,7 +10,7 @@ Package for umbraco **4.x/6.x** that stores multiples videos URL's with extra pr
 *   Description
 *   Media Id *(Provided by the native media picker of umbraco)*
 
-**The list of videos or assets are stored in JSON fromat with the next structure:**
+**The list of videos or assets are stored in JSON fromat with the following structure:**
 
 ```
 [
@@ -46,9 +46,9 @@ Install and Setup
 =======
 
 1. Install the package.
-2. Create a new Data Type (Developer -> Data Types), select "umbraco usercontrol wrapper" as property editor; save the data type.
-3. On settings section of the data type created, select the user control: "~/usercontrols/Umbraco.VideoPicker/VideoPickerDatatype.ascx", save the data type.
-4. On the doc type of your preference add a new property using the Type created on the step 3. (If you wish to install the example package, the macro uses a property called video.)
+2. Create a new Data Type (Developer -> Data Types), select "umbraco usercontrol wrapper" as property editor. Save the data type.
+3. On the settings section of the data type created in the previus step select as user control: "~/usercontrols/Umbraco.VideoPicker/VideoPickerDatatype.ascx". Save the data type.
+4. On the doc type of your choice add a new property using the Type created on step 3. (If you wish to install the example package, the macro uses a property called _video_.)
 5. Now the documents based on the doc type choosen on step 4, will have the video picker component.
 
 Umbraco Package Example Installer
@@ -56,7 +56,7 @@ Umbraco Package Example Installer
 
 [Umbraco.VideoPicker.Example](https://github.com/eerrecart/VideoPicker/blob/master/Umbraco.Packages/Umbraco.VideoPicker.Example.v6.x_1.0.zip?raw=true) (Working on umbraco v6.x)
 
-This macro (can be easly refactored to work in umbraco **v4.x**) shows how to query the data stored form the VideoPicker and get it on the front end page. Then using embed.ly (uses [oEmbed](http://oembed.com/) standard) provider get videos from: *youtube*, *vimeo*, or any other supported by embed.ly.
+This macro (can be easly refactored to work in umbraco **v4.x**) shows how to query the data stored form the VideoPicker and get it on the front end page. Then using the embed.ly (uses [oEmbed](http://oembed.com/) standard) provider get the videos from: *youtube*, *vimeo*, or any other supported by embed.ly.
 Also you can build your own provider.
 
 License
