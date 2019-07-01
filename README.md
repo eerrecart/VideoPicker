@@ -47,7 +47,7 @@ Install and Setup
 
 1. Install the package.
 2. Create a new Data Type (Developer -> Data Types), select "umbraco usercontrol wrapper" as property editor. Save the data type.
-3. On the settings section of the data type created in the previus step select as user control: "~/usercontrols/Umbraco.VideoPicker/VideoPickerDatatype.ascx". Save the data type.
+3. On the settings section of the data type created in the previus step select as user control: `~/usercontrols/Umbraco.VideoPicker/VideoPickerDatatype.ascx`. Save the data type.
 4. On the doc type of your choice add a new property using the Type created on step 3. (If you wish to install the example package, the macro uses a property called _video_.)
 5. Now the documents based on the doc type choosen on step 4, will have the video picker component.
 
